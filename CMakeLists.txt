@@ -63,7 +63,6 @@ if (LOG4CPP_LIBRARY)
 endif ()
 
 # v4l2wrapper
-EXEC_PROGRAM("git submodule update --init")
 aux_source_directory(v4l2wrapper/src LIBSRC_FILES)
 include_directories("v4l2wrapper/inc")
 add_library(v4l2wrapper STATIC ${LIBSRC_FILES})
